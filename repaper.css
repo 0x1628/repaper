@@ -1,0 +1,25 @@
+.repaper {}
+
+.repaper-puncture-normal span,
+.repaper-puncture-close span {
+  margin-right: -.5em;
+}
+
+.repaper-puncture-after {
+  margin-right: .8em;
+}
+
+.repaper-puncture-normal::after,
+.repaper-puncture-close::after {
+  content: ' ';
+  visibility: hidden;
+  font-family: monospace;
+}
+
+.repaper-emoji {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  color: transparent;
+  background-size: cover;
+}

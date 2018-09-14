@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "strict": true,
+    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    },    
+  "include": [
+    "src/**/*"
+  ]
+}
