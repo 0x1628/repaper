@@ -8,7 +8,7 @@ const alignMiddleware: Middleware = function(text: string, $: any, node: any): s
   const modifier = []
 
   while (result) {
-    const [, begin, , targetNormal, targetOpen, targetClose, end] = result
+    const [target, begin, , targetNormal, targetOpen, targetClose, end] = result
     const beginIndex = result.index + begin.length
     const endIndex = chinesePunctuationRe.lastIndex - end.length
 
@@ -16,7 +16,7 @@ const alignMiddleware: Middleware = function(text: string, $: any, node: any): s
 
     const isPuncturationAfter = simpleChinesePunctuationRe.test(end)
 
-    if (isPuncturationAfter) {
+    if (isPuncturationAfter && target.length > 2) {
       chinesePunctuationRe.lastIndex -= 1
     }
 
@@ -30,7 +30,7 @@ const alignMiddleware: Middleware = function(text: string, $: any, node: any): s
         } else if (targetOpen) {
           return 'open'
         } else if (targetClose) {
-          return close
+          return 'close'
         }
       })(),
       isPuncturationBefore: simpleChinesePunctuationRe.test(begin),

@@ -57,7 +57,7 @@ function renderTemplate(tplName: string, data: any): string {
 
 function renderWelcome(): string {
   const {RePaper} = require('../src/index')
-  const test = new RePaper('<div>好的哈232哈哈。附近的开始放假的开始</div><div>cccc 😇 hahahaha</div>')
+  const test = new RePaper('<div>好的哈232哈哈。附近的开始放假的开始</div><div>cccc 😇 hahahaha</div><div>「朝辞白帝彩云间」。</div>')
   return renderTemplate('index', {body: test.parse()})
 }
 
