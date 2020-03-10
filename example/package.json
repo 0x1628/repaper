@@ -4,6 +4,6 @@
   "private": true,
   "dependencies": {
     "@types/handlebars": "^4.0.39",
-    "handlebars": "^4.0.12"
+    "handlebars": "^4.3.0"
   }
 }
