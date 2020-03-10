@@ -1,12 +1,12 @@
 import parse from './parse'
-import MixedSpaceMiddleware from './middlewares/mixed-space'
-import AlignMiddleware from './middlewares/align'
-import EmojiMiddleware from './middlewares/emoji'
+import mixedSpaceMiddleware from './middlewares/mixed-space'
+import alignMiddleware from './middlewares/align'
+import emojiMiddleware from './middlewares/emoji'
 import {Middleware} from '../types'
 
 class RePaper {
-  middlewares: Middleware[] = [MixedSpaceMiddleware, AlignMiddleware,
-    EmojiMiddleware]
+  middlewares: Middleware[] = [mixedSpaceMiddleware, alignMiddleware,
+    emojiMiddleware]
 
   constructor(protected html: string) {
   }

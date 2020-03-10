@@ -8,6 +8,7 @@
     "start-example": "cd example && yarn && ts-node-dev index.ts",
     "watch": "tsc -p . -w",
     "lint": "tslint 'src/**/*.ts' 'example/*.ts'",
+    "test": "jest",
     "build": "tsc -p ."
   },
   "main": "lib/index.js",
@@ -17,9 +18,13 @@
     "repaper.css"
   ],
   "devDependencies": {
+    "@types/cheerio": "^0.22.16",
+    "@types/jest": "^25.1.4",
     "@types/node": "^13.9.0",
     "concurrently": "^5.1.0",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2",
+    "ts-jest": "^25.2.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "tslint": "^6.0.0",
     "typescript": "^3.8.3"
