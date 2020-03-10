@@ -1,6 +1,6 @@
 {
   "name": "repaper",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "fragment0",
   "license": "MIT",
   "scripts": {
@@ -17,16 +17,16 @@
     "repaper.css"
   ],
   "devDependencies": {
-    "@types/node": "^10.9.4",
-    "concurrently": "^4.0.1",
-    "nodemon": "^1.18.4",
-    "ts-node-dev": "^1.0.0-pre.30",
-    "tslint": "^5.11.0",
-    "typescript": "^3.0.3"
+    "@types/node": "^13.9.0",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@types/emojione": "^2.2.2",
-    "cheerio": "^1.0.0-rc.2",
-    "emojione": "^4.0.0"
+    "@types/emojione": "^2.2.6",
+    "cheerio": "^1.0.0-rc.3",
+    "emojione": "^4.5.0"
   }
 }
